@@ -1,0 +1,35 @@
+﻿<Window x:Class="Draw_Together_Server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Draw_Together_Server"
+        xmlns:custom="clr-namespace:Draw_Together_Server.Custom"
+        mc:Ignorable="d"
+        Title="Server" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <custom:CustomDrawTypeRadioButton Grid.Column="0" GroupName="DrawTool" Content="Draw" DrawType="Ink" Click="DrawTypeRadioButton_Click" IsChecked="True"/>
+            <custom:CustomDrawTypeRadioButton Grid.Column="1" GroupName="DrawTool" Content="eraser" DrawType="EraseByStroke" Click="DrawTypeRadioButton_Click"/>
+            <custom:CustomColorRadioButton Grid.Column="2" GroupName="DrawColor" Content="검은색" Color="Black" Click="ColorRadioButton_Click" IsChecked="True"/>
+            <custom:CustomColorRadioButton Grid.Column="3" GroupName="DrawColor" Content="빨강색" Color="Red" Click="ColorRadioButton_Click"/>
+            <custom:CustomColorRadioButton Grid.Column="4" GroupName="DrawColor" Content="파랑색" Color="Blue" Click="ColorRadioButton_Click"/>
+            <custom:CustomColorRadioButton Grid.Column="5" GroupName="DrawColor" Content="초록색" Color="Green" Click="ColorRadioButton_Click"/>
+            <Slider Minimum="1" Maximum="10" Value="1" Grid.Column="6" ValueChanged="Slider_ValueChanged"/>
+        </Grid>
+        <InkCanvas Name="XAML_Ink" Grid.Row="1" StrokeCollected="XAML_Ink_StrokeCollected" StrokeErased="XAML_Ink_StrokeErased"/>
+    </Grid>
+</Window>

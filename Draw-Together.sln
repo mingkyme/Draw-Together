@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw-Together-Server", "Draw-Together-Server\Draw-Together-Server.csproj", "{550F3B62-9153-4E10-A08D-847E59296725}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw-Together-Client", "Draw-Together-Client\Draw-Together-Client.csproj", "{E9B7F280-FFBE-43D3-9400-4D8BB2B8C6BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{550F3B62-9153-4E10-A08D-847E59296725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550F3B62-9153-4E10-A08D-847E59296725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550F3B62-9153-4E10-A08D-847E59296725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550F3B62-9153-4E10-A08D-847E59296725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9B7F280-FFBE-43D3-9400-4D8BB2B8C6BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B7F280-FFBE-43D3-9400-4D8BB2B8C6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B7F280-FFBE-43D3-9400-4D8BB2B8C6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B7F280-FFBE-43D3-9400-4D8BB2B8C6BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31E59411-C6B2-419F-ABD7-9AA62307AA67}
+	EndGlobalSection
+EndGlobal
